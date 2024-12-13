@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Annonces des Entreprises</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scrollbar-width: thin;
+            scrollbar-color: #4a5d7c #1a2435;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a2435;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #4a5d7c, #627894);
+            border-radius: 4px;
+            border: 2px solid #1a2435;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(45deg, #627894, #7a8cA6);
+        }
+
+        body {
+            background: rgba(43, 42, 51, 0.95);
+            color: white;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            background: rgba(74, 93, 124, 0.3);
+            border-radius: 8px;
+        }
+
+        details {
+            margin-bottom: 20px;
+            background: rgba(26, 36, 53, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 15px 20px;
+            cursor: pointer;
+            background: rgba(74, 93, 124, 0.6);
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        summary:hover {
+            background: rgba(98, 120, 148, 0.8);
+        }
+
+        .announcement-card {
+            padding: 20px;
+            margin: 15px;
+            background: rgba(64, 68, 75, 0.6);
+            border-radius: 8px;
+            transition: transform 0.3s ease, background 0.3s ease;
+            white-space: pre-line;
+            line-height: 1.6;
+        }
+
+        .announcement-card:hover {
+            transform: translateY(-5px);
+            background: rgba(74, 93, 124, 0.8);
+        }
+
+        .announcement-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .announcement-date {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .announcement-content {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+
+            .announcement-card {
+                margin: 10px;
+            }
+
+            .announcement-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .announcement-date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Annonces des Entreprises</h2>
+
+        <details>
+            <summary>LSPD</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+Pas d'annonce recente</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>EMS</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+🚑 Message important de vos services médicaux ! 🏥
+
+Chers citoyens, l'hiver arrive et avec lui son lot de petits bobos ! Voici quelques conseils :
+
+💊 Gardez toujours une trousse de premiers secours dans votre véhicule
+🩺 N'attendez pas d'être à l'agonie pour consulter
+🚶‍♂️ Attention aux chutes sur les routes glissantes
+🌡️ Couvrez-vous bien, la grippe rôde !
+
+Nouveauté : Service de consultation rapide disponible 24/7 ! 
+
+En cas d'urgence, composez le 911 ! Nous sommes là pour vous soigner ! ❤️
+
+Votre équipe EMS, pour vous servir ! 🙌</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Benny's</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+🚗🛠️ Nouveautés chez votre Mécanicien préféré ! 🛠️🚗
+
+Bonne nouvelle pour tous les amateurs de véhicules et d'adrénaline ! Votre garage local propose désormais de nouvelles options :
+
+🔧 Vente de bouteilles de Nitro : Ajoutez une dose de puissance à votre bolide avec nos bouteilles de Nitro. Attention toutefois : l'utilisation de Nitro sur route ouverte est illégale et vous en assumez l'entière responsabilité si la police vous attrape ! 😉
+
+🛞 Changement de pneus crevés : Vous n'aurez plus besoin de réparer tout le véhicule pour une simple crevaison. Faites changer vos pneus rapidement et efficacement.
+
+💡 Et ce n'est pas tout ! D'autres options et services innovants devraient arriver prochainement pour encore mieux répondre à vos besoins.
+
+Passez nous voir dès aujourd'hui pour découvrir ces nouveautés ! 🚘
+
+Votre sécurité est notre priorité, alors roulez prudemment !</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Luxury Motorsport</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+                    Pas d'annonce recente</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Uwu-Café</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+                    Pas d'annonce recente</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Pizzeria</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+                    Pas d'annonce recente</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Tabagiste</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+                    Pas d'annonce recente</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Taxi</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+                    Pas d'annonce recente</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>MooreClub</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+                    Pas d'annonce recente</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Vigneron</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+                    Pas d'annonce recente</div>
+            </div>
+        </details>
+
+        <details>
+            <summary>Agent Immobilier</summary>
+            <div class="announcement-card">
+                <div class="announcement-header">
+                    <span class="announcement-date">13/12/2024 - 07:48</span>
+                </div>
+                <div class="announcement-content">
+🏠 Du Nouveau dans l'Immobilier ! 🔑
+
+Découvrez nos dernières opportunités :
+
+🏘️ Nouveaux biens disponibles a RoxWood
+📱 Visite virtuelle maintenant disponible
+💰 Financement comptant ou location
+
+Estimation gratuite de votre bien ! 
+
+Réalisez votre rêve immobilier avec nous ! 🌟
+
+Contactez-nous pour plus d'informations ! 📞</div>
+            </div>
+        </details>
+    </div>
+</body>
+</html>
